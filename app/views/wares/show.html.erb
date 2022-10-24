@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @ware %>
+
+<div>
+  <%= link_to "Edit this ware", edit_ware_path(@ware) %> |
+  <%= link_to "Back to wares", wares_path %>
+
+  <%= button_to "Destroy this ware", @ware, method: :delete %>
+</div>
