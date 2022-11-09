@@ -1,7 +1,8 @@
 require "test_helper"
 
 class WareTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+   test "should not save user without name" do
+     ware = Ware.new
+     assert_not ware.save
+   end
 end
