@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  namecart: MyString
+  userid: 1
+  status: MyString
+  creation_timestamp: 2022-11-21 19:31:21
+
+two:
+  namecart: MyString
+  userid: 1
+  status: MyString
+  creation_timestamp: 2022-11-21 19:31:21
