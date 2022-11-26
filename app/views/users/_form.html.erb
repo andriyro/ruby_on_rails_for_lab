@@ -37,8 +37,8 @@
   </div>
 
     <div>
-    <%= form.label :userrole_id, style: "display: block" %>
-    <%= form.text_field :userrole_id %>
+    <%= form.label :namerole, style: "display: block" %>
+    <%= form.select :userrole_id, options_for_select(@nameroles.collect { |role| [role.namerole, role.id]}) %>
   </div>
 
   <div>
