@@ -70,7 +70,7 @@ class UsersController < ApplicationController
     end
 
     def set_nameroles
-      @nameroles = Userrole.all.order(:name)
+      @nameroles = Userrole.all
     end
 
 end
