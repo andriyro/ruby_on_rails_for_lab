@@ -12,16 +12,16 @@
   <% end %>
 
   <div>
-    <%= form.label :name_product, style: "display: block" %>
-    <%= form.text_field :name_product %>
+    <%= form.label "Назва продукту", style: "display: block" %>
+    <%= form.text_field(:name_product, {:class =>'form-control'}) %>
   </div>
 
   <div>
-    <%= form.label :price, style: "display: block" %>
-    <%= form.text_field :price %>
+    <%= form.label "Цiна", style: "display: block" %>
+    <%= form.text_field(:price,  {:class =>'form-control'}) %>
   </div>
-
+<br>
   <div>
-    <%= form.submit %>
+    <%= form.submit("Зберегти", {:class =>'btn btn-success'}) %>
   </div>
 <% end %>

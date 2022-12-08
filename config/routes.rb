@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  root "greetings#hello"
+  root "greetings#hello", as: 'home'
   get 'info', to: "about#info", as: 'info'
-  get 'index', to: 'posts#index' 
+  get 'index', to: 'posts#index', as: 'index'
   resources:posts
 end

@@ -1,14 +1,18 @@
-<h2>New account</h2>
+<h2>Додати вiдгук</h2>
 <%= form_for :post, url: posts_path do |f|%>
 <p>
- First name <br>
- <%= f.text_field :title %>
+Прiзвище <br>
+<%= f.text_field(:title, {:class =>'form-control'}) %>
 </p>
 <p>
-Last name <br>
-<%= f.text_area :body %>
+ I'мя<br>
+<%= f.text_field(:title, {:class =>'form-control'}) %>
 </p>
 <p>
-<%= f.submit %>
+Вiдгук<br>
+<%= f.text_area(:body, {:class =>'form-control'}) %>
+</p>
+<p>
+<%= f.submit("Додати", {:class =>'btn btn-success'})%>
 </p>
 <% end %>

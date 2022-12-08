@@ -3,8 +3,8 @@
 <%= render @cart %>
 
 <div>
-  <%= link_to "Edit this cart", edit_cart_path(@cart) %> |
-  <%= link_to "Back to carts", carts_path %>
+  <%= link_to "Вiдредагувати", edit_cart_path(@cart) %> |
+  <%= link_to "Назад до кошикiв", carts_path %>
 
-  <%= button_to "Destroy this cart", @cart, method: :delete %>
+  <%= button_to "Видалити цей кошик", @cart, method: :delete %>
 </div>

@@ -12,21 +12,21 @@
   <% end %>
 
   <div>
-    <%= form.label :Name_shop, style: "display: block" %>
-    <%= form.text_field :Name_shop %>
+    <%= form.label 'Назва', style: "display: block" %>
+    <%= form.text_field(:Name_shop, {:class => 'form-control'}) %>
   </div>
 
   <div>
-    <%= form.label :Address, style: "display: block" %>
-    <%= form.text_field :Address %>
+    <%= form.label 'Адреса', style: "display: block" %>
+    <%= form.text_field(:Address, {:class => 'form-control'} )%>
   </div>
 
   <div>
-    <%= form.label :Coordinates, style: "display: block" %>
-    <%= form.text_field :Coordinates %>
+    <%= form.label 'Координати', style: "display: block" %>
+    <%= form.text_field(:Coordinates, {:class => 'form-control'}) %>
   </div>
-
+<br>
   <div>
-    <%= form.submit %>
+    <%= form.submit("Зберегти", {:class =>'btn btn-success'}) %>
   </div>
 <% end %>
