@@ -31,16 +31,19 @@
  <span class='p-2 text-dark'><%= link_to "Магазини", new_shop_path %></span>
  <span class='p-2 text-dark'><%= link_to "Продукти", new_ware_path %></span>
  <p><%= link_to (image_tag 'cart1.jpg', style: 'height: 60px; widht: 60px; alighn: right '), new_cart_path%></p>
-</div>
-<div class="container">
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+ <p>
   <% if current_user %>
   <%= current_user.email %>
   <%= button_to "Вийти", destroy_user_session_path, method: :delete, data: {turbo: false} %>
   <% else %>
   <%= link_to "Landing_page", home_path %>
   <% end %>
+ </p>
+</div>
+<div class="container">
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
 
  <%= yield %>
 </div>

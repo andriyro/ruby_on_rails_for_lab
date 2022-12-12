@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   get 'static_pages/dashboard'
   root 'static_pages#landing_page'
 
-  
+  resources :posts do
+resources :chats
+end
 
   resources :categories
   resources :lists

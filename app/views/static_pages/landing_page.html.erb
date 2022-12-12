@@ -1,2 +1,55 @@
-<h1>StaticPages#landing_page</h1>
-<p>Find me in app/views/static_pages/landing_page.html.erb</p>
+<h1>Акції</h1>
+    <style>
+      #gallery {
+      width: 1400px;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      padding-left: -20px;
+      }
+      #navigation {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display:flex;
+      justify-content: space-between;
+      }
+      #navigation li a img {
+      display: block;
+      border: none;
+      }
+      #navigation li a {
+      display: block;
+      }
+    </style>
+    <main>
+    <div id="gallery">
+      <ul id="navigation">
+        <li>
+          <a href="#picture1">
+          <%= image_tag 'photo5.png'%>
+          </a>
+        </li>
+        <li>
+          <a href="#picture2">
+          <%= image_tag 'photo2.png'%>
+          </a>
+        </li>
+        <li>
+          <a href="#picture3">
+          <%= image_tag 'photo3.png'%>
+          </a>
+        </li>
+        <li>
+          <a href="#picture4">
+          <%= image_tag 'photo4.png'%>
+          </a>
+        </li>
+      </ul>
+    </div>
+</main>
+<footer>
+<p align="center"><br><br><br><br><br><br><br>м. Iвано-Франкiвськ 2022<br>0800 524 987</p>
+</footer>
+
+

@@ -1,2 +1,32 @@
 <h1><%= @post.title %></h1>
 <h1><%= @post.body %></h1>
+<hr>
+<%= link_to "Редагувати", edit_post_path(@post), :class =>'btn btn-warning'%>
+
+<span style="display:inline-block"><%= button_to "Видалити",post_path(@post), method: :delete, :class =>'btn btn-danger'%></span>
+
+<hr>
+<h2> Коментувати </h2>
+<%= form_for([@post, @post.chats.build]) do |f|%>
+<p>
+Користувач <br>
+<%= f.text_field(:name, {:class =>'form-control'}) %>
+</p>
+<p>
+Текст коментаря <br>
+<%= f.text_area(:body, {:class =>'form-control'}) %>
+</p>
+<p>
+<%= f.submit("Додати коментар", {:class =>'btn btn-success'})%>
+</p>
+
+<hr>
+<h2>Всі коментарі</h2>
+<% @post.chats.each do |chat| %>
+<p><strong><%= chat.name %> </strong></p>
+<p><strong>Коментар: </strong><%= chat.body %></p>
+<% end %>
+<hr>
+
+<% end %>
+
